@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Поиск книги</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <div class="page__header">
+      <h1 class="page__title" style="font-size:24px">Поиск книги</h1>
+<form class="hero-form" action="search.html" method="get">
+  <div class="field field--full">
+    <label class="field__label" for="f-name">Название</label>
+    <input class="field__input" id="f-name" name="name" type="text" placeholder="Введите название книги" value="JavaScript">
+  </div>
+  <div class="field field--full">
+    <label class="field__label" for="f-author">Автор</label>
+    <input class="field__input" id="f-author" name="author" type="text" placeholder="Введите автора" value="">
+  </div>
+  <div class="field">
+    <label class="field__label" for="f-out">Выдача книги</label>
+    <input class="field__input" id="f-out" name="issue" type="date" value="">
+  </div>
+  <div class="field">
+    <label class="field__label" for="f-ret">Возврат книги</label>
+    <input class="field__input" id="f-ret" name="return" type="date" value="">
+  </div>
+  <div class="field--full"><button class="btn btn--primary" type="submit">Найти</button></div>
+</form>
+    </div>
+    <p class="found-count">Найдено: 4 книги</p>
+    <div class="books-grid">
+<article class="book-card">
+  <div class="book-card__cover"><img src="assets/book-1.svg" alt="Обложка: JavaScript для детей до профи"></div>
+  <div class="book-card__body">
+    <h3 class="book-card__title">JavaScript для детей до профи</h3>
+    <p class="book-card__row"><b>Ник Морган</b></p>
+    <p class="book-card__row"><span>2014</span></p>
+    <p class="book-card__row">Эта книга позволит вам погрузиться в программирование и с легкостью освоить JavaScript. Вы напишете несколько настоящих игр — поиск сокровищ на карте, «Виселицу», «Змейку»…</p>
+    <p class="book-card__row"><span>Центральная городская библиотека им. Н.А. Некрасова</span></p>
+    <a class="btn btn--primary btn--sm book-card__action" href="booking.html">Забронировать</a>
+  </div>
+</article>
+<article class="book-card">
+  <div class="book-card__cover"><img src="assets/book-2.svg" alt="Обложка: JavaScript с нуля"></div>
+  <div class="book-card__body">
+    <h3 class="book-card__title">JavaScript с нуля</h3>
+    <p class="book-card__row"><b>Свекис Лоренс, Ларс Майке, Персиваль Роб</b></p>
+    <p class="book-card__row"><span>2019</span></p>
+    <p class="book-card__row">Книга демонстрирует возможности JavaScript для разработки веб-приложений, сочетая теорию с упражнениями и интересными проектами. Она показывает…</p>
+    <p class="book-card__row"><span>Центральная городская библиотека им. Н.А. Некрасова</span></p>
+    <a class="btn btn--primary btn--sm book-card__action" href="booking.html">Забронировать</a>
+  </div>
+</article>
+<article class="book-card">
+  <div class="book-card__cover"><img src="assets/book-3.svg" alt="Обложка: Рефакторинг кода на JavaScript"></div>
+  <div class="book-card__body">
+    <h3 class="book-card__title">Рефакторинг кода на JavaScript</h3>
+    <p class="book-card__row"><b>Мартин Фаулер</b></p>
+    <p class="book-card__row"><span>2019</span></p>
+    <p class="book-card__row">Рефакторинг уже давно и прочно занимает достойное место среди технологий программирования, и не в последнюю очередь благодаря Мартину Фаулеру — автору одной из тех книг…</p>
+    <p class="book-card__row"><span>Центральная городская библиотека им. Н.А. Некрасова</span></p>
+    <a class="btn btn--primary btn--sm book-card__action" href="booking.html">Забронировать</a>
+  </div>
+</article>
+<article class="book-card">
+  <div class="book-card__cover"><img src="assets/book-4.svg" alt="Обложка: Полное руководство по JavaScript"></div>
+  <div class="book-card__body">
+    <h3 class="book-card__title">Полное руководство по JavaScript</h3>
+    <p class="book-card__row"><b>Дэвид Флэнаган</b></p>
+    <p class="book-card__row"><span>2020</span></p>
+    <p class="book-card__row">Справочник по самому популярному языку программирования! JavaScript — это язык программирования для веб-страниц, который в настоящее время используется большим количеством…</p>
+    <p class="book-card__row"><span>Центральная городская библиотека им. Н.А. Некрасова</span></p>
+    <a class="btn btn--primary btn--sm book-card__action" href="booking.html">Забронировать</a>
+  </div>
+</article>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

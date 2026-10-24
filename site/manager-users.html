@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Пользователи — менеджер</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <div class="account">
+    <aside class="account__sidebar">
+      <img class="avatar" src="assets/avatars/avatar 7.svg" alt="Аватар">
+      <h2 class="account__name">Привет, Елена!</h2>
+      <p class="account__role">Библиотекарь</p>
+      <nav class="account__nav">
+      <a href="manager-home.html">Главная</a>
+      <a class="is-active" href="manager-users.html">Пользователи</a>
+      <a href="manager-books.html">Книги</a>
+      <a href="manager-settings.html">Настройки</a>
+      <a href="login.html">Выход</a>
+      </nav>
+    </aside>
+      <section class="account__content">
+        <h2 class="section-title">Пользователи</h2>
+        <div class="toolbar">
+          <input class="field__input" style="flex:1" type="search" placeholder="Поиск по ФИО, id, телефону или почту">
+          <div class="role-filters">
+            <label class="check"><input type="checkbox" checked> Все</label>
+            <label class="check"><input type="checkbox"> Администратор</label>
+            <label class="check"><input type="checkbox"> Библиотекарь</label>
+            <label class="check"><input type="checkbox"> Клиент</label>
+          </div>
+          <a class="btn btn--primary btn--sm" href="modal-add-user.html">+ Добавить пользователя</a>
+        </div>
+        <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>ID</th><th>ФИО / Контакты</th><th>Последняя активность</th><th>Активные брони</th><th>Роль</th><th>Чат</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 1.svg" alt=""><span><b>Иванов Сергей Петрович</b><br><span style="color:var(--placeholder);font-size:14px">+79001234567<br>sergey.ivanov@example.com</span></span></div></td><td>04.09.2022</td><td>0</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>12</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 2.svg" alt=""><span><b>Смирнова Анна Викторовна</b><br><span style="color:var(--placeholder);font-size:14px">+79012345678<br>anna.smirnova@example.com</span></span></div></td><td>10.01.2024</td><td>1</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>14</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 3.svg" alt=""><span><b>Попова Елена Сергеевна</b><br><span style="color:var(--placeholder);font-size:14px">+79034567890<br>elena.popova@example.com</span></span></div></td><td>23.08.2025</td><td>&mdash;</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>5</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 5.svg" alt=""><span><b>Волков Андрей Николаевич</b><br><span style="color:var(--placeholder);font-size:14px">+79045678901<br>andrey.volkov@example.com</span></span></div></td><td>12.08.2025</td><td>0</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>16</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 6.svg" alt=""><span><b>Соколова Мария Алексеевна</b><br><span style="color:var(--placeholder);font-size:14px">+79056789012<br>maria.sokolova@example.com</span></span></div></td><td>19.05.2023</td><td>&mdash;</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>17</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 8.svg" alt=""><span><b>Михайлов Алексей Дмитриевич</b><br><span style="color:var(--placeholder);font-size:14px">+79067890123<br>a.mikhailov@example.com</span></span></div></td><td>12.04.2024</td><td>1</td><td>Библиотекарь</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>18</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 9.svg" alt=""><span><b>Фёдорова Наталья Игоревна</b><br><span style="color:var(--placeholder);font-size:14px">+79078901234<br>natalia.fedorova@example.com</span></span></div></td><td>22.08.2025</td><td>3</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>19</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 10.svg" alt=""><span><b>Морозов Павел Александрович</b><br><span style="color:var(--placeholder);font-size:14px">+79089012345<br>pavel.morozov@example.com</span></span></div></td><td>23.08.2025</td><td>&mdash;</td><td>Администратор</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+            <tr><td>20</td><td><div style="display:flex;gap:12px;align-items:center"><img class="avatar" style="width:44px;height:44px;margin:0" src="assets/avatars/avatar 11.svg" alt=""><span><b>Васильева Ольга Петровна</b><br><span style="color:var(--placeholder);font-size:14px">+79090123456<br>olga.vasilieva@example.com</span></span></div></td><td>15.07.2022</td><td>0</td><td>Клиент</td><td><a class="btn btn--sm btn--ghost" href="manager-user-detail.html">&#128172;</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Админ — главная</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <div class="account">
+    <aside class="account__sidebar">
+      <img class="avatar" src="assets/avatars/avatar 12.svg" alt="Аватар">
+      <h2 class="account__name">Привет, Константин!</h2>
+      <p class="account__role">Администратор</p>
+      <nav class="account__nav">
+      <a class="is-active" href="admin-home.html">Главная</a>
+      <a href="admin-users.html">Пользователи</a>
+      <a href="admin-libraries.html">Библиотеки</a>
+      <a href="admin-settings.html">Настройки</a>
+      <a href="login.html">Выход</a>
+      </nav>
+    </aside>
+      <section class="account__content">
+        <h2 class="section-title">Добро пожаловать в админ-панель!</h2>
+        <div class="welcome-stats">
+          <div class="stat"><strong>239</strong><span>Всего библиотек</span></div>
+          <div class="stat"><strong>2 057 898</strong><span>Всего книг в системе</span></div>
+          <div class="stat"><strong>10 983</strong><span>Активные бронирования</span></div>
+          <div class="stat"><strong>10 347</strong><span>Всего пользователей</span></div>
+          <div class="stat"><strong>983</strong><span>С активными бронированиями</span></div>
+          <div class="stat"><strong>12</strong><span>Новых сообщений</span></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

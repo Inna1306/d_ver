@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Профиль — пустой аватар</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <div class="account">
+    <aside class="account__sidebar">
+      <img class="avatar" src="assets/avatars/avatar 24.svg" alt="Аватар">
+      <h2 class="account__name">Привет, Капитолина!</h2>
+      <p class="account__role">Читатель</p>
+      <nav class="account__nav">
+      <a href="user-home.html">Главная</a>
+      <a href="user-books.html">Мои книги</a>
+      <a class="is-active" href="user-profile.html">Профиль</a>
+      <a href="login.html">Выход</a>
+      </nav>
+    </aside>
+      <section class="account__content">
+        <h2 class="section-title">Личная информация</h2>
+        <form class="form--grid form">
+          <div class="field field--full"><label class="field__label">ФИО</label><input class="field__input" value="Власова Капитолина Владимировна"></div>
+          <div class="field"><label class="field__label">Телефон</label><input class="field__input" type="tel" value="+790677866543"></div>
+          <div class="field"><label class="field__label">Почта</label><input class="field__input" type="email" value="valsova_kap@mail.com"></div>
+          <div class="field"><label class="field__label">Пароль</label><a class="btn btn--sm btn--ghost" href="modal-change-password.html">&#128274; Сменить пароль</a></div>
+          <div class="field"><label class="field__label">Аватар</label><img class="avatar" style="width:80px;height:80px" src="assets/avatars/avatar 24.svg" alt="Аватар"><br><div class="avatar-actions"><button class="btn btn--sm btn--ghost" type="button">&#128247; Добавить фото</button></div></div>
+          <div class="modal__actions field--full"><button class="btn btn--primary" type="submit">Сохранить изменения</button><a class="btn btn--ghost" href="user-home.html">Отменить</a></div>
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

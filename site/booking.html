@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бронирование книги</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <h1 class="page__title">Бронирование книги &laquo;JavaScript для детей&raquo;</h1>
+    <article class="book-card" style="margin-bottom:32px">
+      <div class="book-card__cover"><img src="assets/book-1.svg" alt="JavaScript для детей"></div>
+      <div class="book-card__body">
+        <h3 class="book-card__title">JavaScript для детей</h3>
+        <p class="book-card__row"><b>Ник Морган</b></p>
+        <p class="book-card__row"><span>2014</span></p>
+        <p class="book-card__row">Эта книга позволит вам погрузиться в программирование и с легкостью освоить JavaScript. Вы напишете несколько настоящих игр &mdash; поиск сокровищ на карте, &laquo;Виселицу&raquo; и &laquo;Змейку&raquo;.</p>
+      </div>
+    </article>
+    <form action="confirm-booking.html" method="get">
+      <h2 class="section-title">Выберите библиотеку</h2>
+      <div class="booking-lib-grid">
+        <label class="lib-option"><input type="radio" name="library" value="Библиотека им. Тургенева" ><span><strong>Библиотека им. Тургенева</strong><span>Трубниковский пер., д. 17</span></span></label>
+        <label class="lib-option"><input type="radio" name="library" value="Библиотека им. Некрасова" checked><span><strong>Библиотека им. Некрасова</strong><span>ул. Бауманская, д. 58/25</span></span></label>
+        <label class="lib-option"><input type="radio" name="library" value="Центральная детская библиотека им. А.С. Пушкина" ><span><strong>Центральная детская библиотека им. А.С. Пушкина</strong><span>ул. Большая Черкизовская, д. 4</span></span></label>
+        <label class="lib-option"><input type="radio" name="library" value="Центральная городская библиотека" ><span><strong>Центральная городская библиотека</strong><span>ул. Бауманская, д. 58/25</span></span></label>
+      </div>
+      <h2 class="section-title">Выберите период бронирования</h2>
+      <div class="period-grid">
+        <div class="field">
+          <label class="field__label" for="b-out">Выдача книги</label>
+          <input class="field__input" id="b-out" name="issue" type="date" value="2025-09-12">
+        </div>
+        <div class="field">
+          <label class="field__label" for="b-ret">Возврат книги</label>
+          <input class="field__input" id="b-ret" name="return" type="date" value="2025-09-26">
+        </div>
+      </div>
+      <div class="modal__actions"><button class="btn btn--primary" type="submit">Забронировать</button><a class="btn btn--ghost" href="search.html">Отменить</a></div>
+    </form>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

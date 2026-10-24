@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вход в аккаунт</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="modal-page">
+  <div class="modal">
+    <button class="modal__close" type="button" onclick="location.href='index.html'">&#10005;</button>
+    <h2 class="modal__title">Вход в аккаунт</h2>
+        <form class="form" action="user-home.html" method="get">
+          <p class="empty__text" style="margin-bottom:24px">Войдите в аккаунт, чтобы бронировать книги и управлять ими.</p>
+          <div class="field field--full">
+            <label class="field__label" for="l-mail">Электронная почта</label>
+            <input class="field__input" id="l-mail" type="email" placeholder="mail@example.com">
+          </div>
+          <div class="field field--full">
+            <label class="field__label" for="l-pass">Пароль</label>
+            <input class="field__input" id="l-pass" type="password" placeholder="Введите пароль">
+          </div>
+          <label class="check"><input type="checkbox"> Запомнить меня</label>
+          <div class="modal__actions modal__actions--center" style="margin-top:24px">
+            <a class="btn btn--ghost" href="modal-signup.html">Регистрация</a>
+            <button class="btn btn--primary" type="submit">Войти</button>
+          </div>
+        </form>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

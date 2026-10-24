@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Книги библиотеки Некрасова — админ</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <div class="account">
+    <aside class="account__sidebar">
+      <img class="avatar" src="assets/avatars/avatar 12.svg" alt="Аватар">
+      <h2 class="account__name">Привет, Константин!</h2>
+      <p class="account__role">Администратор</p>
+      <nav class="account__nav">
+      <a href="admin-home.html">Главная</a>
+      <a href="admin-users.html">Пользователи</a>
+      <a class="is-active" href="admin-libraries.html">Библиотеки</a>
+      <a href="admin-settings.html">Настройки</a>
+      <a href="login.html">Выход</a>
+      </nav>
+    </aside>
+      <section class="account__content">
+        <h2 class="section-title">Центральная городская библиотека им. Н.А. Некрасова</h2>
+        <div class="info-card" style="margin-bottom:24px">
+          <h3>Информация</h3>
+          <p><span>Название:</span> <b>Центральная городская библиотека им. Н.А. Некрасова</b></p>
+          <p><span>Адрес:</span> ул. Бауманская, д. 58/25</p>
+          <p><span>Описание:</span> Крупнейший центр чтения и современных библиотечных технологий в Москве.</p>
+          <p><span>Всего книг:</span> 100 000 &nbsp;&nbsp; <span>Доступно книг:</span> 95 300</p>
+        </div>
+        <div class="toolbar">
+          <input class="field__input" style="flex:1" type="search" placeholder="Поиск по названию или автору">
+          <a class="btn btn--primary btn--sm" href="modal-add-book.html">+ Добавить книгу</a>
+        </div>
+        <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>ID</th><th>Название</th><th>Автор</th><th>Год</th><th>Описание</th><th>Кол-во экземпляров</th><th>Действия</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><b>Евгений Онегин</b></td><td>Пушкин А.С.</td><td>1833</td><td style="max-width:360px">Роман в стихах о судьбе «лишнего человека» Евгения Онегина и любви Татьяны Лариной. Соединяет социальную критику и тонкую психологию.</td><td>20</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>2</td><td><b>Капитанская дочка</b></td><td>Пушкин А.С.</td><td>1836</td><td style="max-width:360px">Историческая повесть о восстании Пугачёва и судьбе дворянина Гринева. Темы чести, верности и выбора в смутное время.</td><td>5</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>3</td><td><b>Анна Каренина</b></td><td>Толстой Л.Н.</td><td>1875</td><td style="max-width:360px">Трагическая история любви Анны и Вронского. Роман о моральных устоях общества и поиске смысла жизни.</td><td>3</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>4</td><td><b>Война и мир</b></td><td>Толстой Л.Н.</td><td>1869</td><td style="max-width:360px">Эпопея о войне 1812 года, судьбах дворянских семей и размышлениях о месте человека в истории.</td><td>16</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>5</td><td><b>Преступление и наказание</b></td><td>Достоевский Ф.М.</td><td>1866</td><td style="max-width:360px">История студента Раскольникова, совершившего убийство ради идеи. О совести, выборе и пути к искуплению.</td><td>12</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>6</td><td><b>Братья Карамазовы</b></td><td>Достоевский Ф.М.</td><td>1880</td><td style="max-width:360px">Роман о семье Карамазовых, философское исследование веры, свободы и справедливости.</td><td>8</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>7</td><td><b>Идиот</b></td><td>Достоевский Ф.М.</td><td>1869</td><td style="max-width:360px">Князь Мышкин — человек «с чистой душой» в мире страстей и интриг. Роман о столкновении добра и порока.</td><td>6</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>8</td><td><b>Кому на Руси жить хорошо</b></td><td>Некрасов Н.А.</td><td>1877</td><td style="max-width:360px">Поэма о судьбах простых людей, о поиске счастья и справедливости в России.</td><td>4</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>9</td><td><b>Мёртвые души</b></td><td>Гоголь Н.В.</td><td>1842</td><td style="max-width:360px">Повесть о Чичикове, скупавшем «мёртвые души» крестьян. Сатира на общество.</td><td>10</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+            <tr><td>10</td><td><b>Герой нашего времени</b></td><td>Лермонтов М.Ю.</td><td>1840</td><td style="max-width:360px">История Печорина, разочарованного офицера. Один из первых психологических романов в русской литературе.</td><td>7</td><td><div class="row-actions"><a class="btn btn--sm btn--ghost" href="modal-edit-book.html">&#9998;</a><a class="btn btn--sm btn--danger" href="modal-confirm-delete-book.html">&#10005;</a></div></td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

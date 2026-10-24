@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Книги — менеджер</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo__mark">&#128218;</span>лого</a>
+  <nav class="topbar__nav">
+    <a href="index.html#map">Библиотеки</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="login.html">Вход</a>
+  </nav>
+</header>
+<main class="screen">
+  <div class="page">
+    <div class="account">
+    <aside class="account__sidebar">
+      <img class="avatar" src="assets/avatars/avatar 7.svg" alt="Аватар">
+      <h2 class="account__name">Привет, Елена!</h2>
+      <p class="account__role">Библиотекарь</p>
+      <nav class="account__nav">
+      <a href="manager-home.html">Главная</a>
+      <a href="manager-users.html">Пользователи</a>
+      <a class="is-active" href="manager-books.html">Книги</a>
+      <a href="manager-settings.html">Настройки</a>
+      <a href="login.html">Выход</a>
+      </nav>
+    </aside>
+      <section class="account__content">
+        <h2 class="section-title">Книги</h2>
+        <p class="empty__text" style="margin-bottom:24px">Выберите одну из библиотек из списка. Книга будет добавлена именно в выбранную библиотеку.</p>
+        <div class="radio-list">
+          <label class="lib-option"><input type="radio" name="lib" value="Библиотека им. А. С. Пушкина" checked><strong>Библиотека им. А. С. Пушкина</strong></label>
+          <label class="lib-option"><input type="radio" name="lib" value="Библиотека-читальня им. И. С. Тургенева" ><strong>Библиотека-читальня им. И. С. Тургенева</strong></label>
+          <label class="lib-option"><input type="radio" name="lib" value="Центральная городская детская библиотека им. А. П. Гайдара" ><strong>Центральная городская детская библиотека им. А. П. Гайдара</strong></label>
+          <label class="lib-option"><input type="radio" name="lib" value="Библиотека иностранной литературы им. М. И. Рудомино" ><strong>Библиотека иностранной литературы им. М. И. Рудомино</strong></label>
+          <label class="lib-option"><input type="radio" name="lib" value="Государственная публичная историческая библиотека России" ><strong>Государственная публичная историческая библиотека России</strong></label>
+        </div>
+        <h3 class="section-title">Информация</h3>
+        <div class="info-card">
+          <p><span>Название:</span> <b>Библиотека им. А. С. Пушкина</b></p>
+          <p><span>Адрес:</span> ул. Тверская, 25</p>
+          <p><span>Описание:</span> Крупная центральная библиотека, специализируется на классике и редких изданиях.</p>
+          <p><span>Всего книг:</span> 120 000</p>
+          <p><span>Доступно книг:</span> 87 500</p>
+        </div>
+        <div class="modal__actions"><a class="btn btn--primary" href="manager-catalog.html">Перейти к книгам</a></div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contacts">
+  <img class="blob blob--right" src="assets/amorphous-shape-2.svg" alt="">
+  <img class="blob blob--left" src="assets/amorphous-shape-3.svg" alt="">
+  <div class="footer__inner">
+    <div class="footer__logo">лого</div>
+    <div class="footer__social">
+      <a class="social-link" href="#" aria-label="ВКонтакте"><img src="assets/social-vk.svg" alt="VK"></a>
+      <a class="social-link" href="#" aria-label="Telegram"><img src="assets/social-telegram.svg" alt="Telegram"></a>
+      <a class="social-link" href="#" aria-label="Одноклассники"><img src="assets/social-odnoklassniki.svg" alt="OK"></a>
+      <a class="social-link" href="#" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p class="footer__policy">Политика обработки персональных данных</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
